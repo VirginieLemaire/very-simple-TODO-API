@@ -2,5 +2,8 @@
 CREATE TABLE todos (
   id SERIAL PRIMARY KEY,
   task TEXT NOT NULL,
-  completed BOOLEAN DEFAULT false
+  completed BOOLEAN DEFAULT false,
+  "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+;
