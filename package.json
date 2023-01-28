@@ -1,0 +1,29 @@
+{
+  "name": "very-simple-todo-api",
+  "version": "1.0.0",
+  "description": "a very simple API to show to students how to fetch datas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirginieLemaire/very-simple-TODO-API.git"
+  },
+  "keywords": [],
+  "author": "Virginie Lemaire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VirginieLemaire/very-simple-TODO-API/issues"
+  },
+  "homepage": "https://github.com/VirginieLemaire/very-simple-TODO-API#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "node-dev": "^8.0.0"
+  }
+}
