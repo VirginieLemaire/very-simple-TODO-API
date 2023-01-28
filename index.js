@@ -6,9 +6,7 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors({
-  origin: [`http://localhost:${process.env.PORT}`]
-}));
+app.use(cors());
 
 // body-parser middleware
 app.use(express.urlencoded({ extended: true }));
