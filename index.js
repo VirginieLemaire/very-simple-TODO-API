@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const { urlencoded } = require('express');
 const express = require('express');
 const router = require('./app/router');
 

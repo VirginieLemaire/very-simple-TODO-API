@@ -28,6 +28,38 @@ const taskController = {
         } catch (err) {
             res.status(400).json({ message: err.message });
         }
+    },
+    // Update a todo item
+    updateTask: async (req, res) => {
+        try {
+            // Check if the task exists
+            const task = await Task.findByPk(req.params.id);
+            // if it does, update it
+            if (task) {
+                await task.update(req.body);
+                res.json(task);
+            } else {
+                res.status(404).json({ message: 'Task not found' });
+            }
+        } catch (err) {
+            res.status(500).json({ message: err.message });
+        }
+    },
+    // Delete a todo item
+    deleteTask: async (req, res) => {
+        try {
+            // Check if the task exists
+            const task = await Task.findByPk(req.params.id);
+            // if it does, delete it
+            if (task) {
+                await task.destroy();
+                res.json({ message: 'Task deleted' });
+            } else {
+                res.status(404).json({ message: 'Task not found' });
+            }
+        } catch (err) {
+            res.status(500).json({ message: err.message });
+        }
     }
 };
 
