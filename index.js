@@ -2,8 +2,13 @@ require('dotenv').config();
 
 const express = require('express');
 const router = require('./app/router');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors({
+  origin: [`http://localhost:${process.env.PORT}`]
+}));
 
 // body-parser middleware
 app.use(express.urlencoded({ extended: true }));
