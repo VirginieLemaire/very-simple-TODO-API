@@ -4,7 +4,9 @@ This is a very simple REST API I made for JavaScript learning beginners to have 
 
 It's a Nodejs, express and Sequelize application with a postgreSQL database deployed on [elephantSQL](https://www.elephantsql.com/).
 
-Database only contains one table but it's absolutely possible to add more if you want on your own DB ;) 
+Database only contains one table but it's absolutely possible to add more if you want on your own DB :wink:
+
+You'll find [a little documentation](./doc/Very-simple-documentation.md) in the `/doc` folder.
 
 ## Stack and prerequisite
 
@@ -34,7 +36,7 @@ e.g. If I see "Hello `<your firstname>` -> I replace `<your firstname>` by my fi
 - in your terminal, move to the folder running `cd very-simple-TODO-API/`
 </details>
 
-### Prepare everything ;) 
+### Prepare everything :wink: 
 
 - If you haven't done it yet, create a postgreSQL database (DB)
 - In the terminal, run the sql script to create the table:  connect to your DB running `psql -U <the name of the user who owns the DB> -d <the name of your DB> -f ./data/create_tables.sql` (remember to change the informations you enter so it corresponds to your DB ones)
